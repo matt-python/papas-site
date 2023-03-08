@@ -7,6 +7,7 @@ from flask_bootstrap import Bootstrap
 import smtplib
 import datetime
 import os
+import email_validator
 
 EM_PWD = os.environ.get('NOREPLY_PWD')
 EMAIL = os.environ.get('NOREPLY_EMAIL')
