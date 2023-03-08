@@ -8,9 +8,9 @@ import smtplib
 import datetime
 import os
 
-EM_PWD = os.environ.get('PFR_EMAIL_PWD')
-EMAIL = 'matt.python86@gmail.com'
-DEST_EMAIL = 'PFR2014@Outlook.com'
+EM_PWD = os.environ.get('NOREPLY_PWD')
+EMAIL = os.environ.get('NOREPLY_EMAIL')
+DEST_EMAIL = os.environ.get('PAPA_EMAIL')
 
 
 class ContactForm(FlaskForm):
