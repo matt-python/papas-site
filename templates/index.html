@@ -1,0 +1,219 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<!-- Header-->
+<header id="home" class="masthead bg-black py-5 border-bottom">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="">
+                <div class="card text-center bg-black my-5">
+                    <div class="page-heading title-text">
+                        <h1 class="display-5 fw-bolder mb-2">PAPA'S FIREARM REPAIR</h1>
+                        <hr>
+
+
+
+                        <div>
+                            <img class="title-image" src="{{ url_for('static', filename='/assets/title-logo.png') }}" alt="gold-star">
+                        </div>
+
+
+
+                        <h2>FIREARMS SOLD, TRANSFERRED, CLEANED AND REPAIRED</h2>
+                    </div>
+                    <p class="lead text-white-50 mb-4">MILITARY & FIRST RESPONDERS - 10% OFF!</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-outline-warning btn-lg bg-gradient px-4" href="#about-section">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Gallery section-->
+<section class="py-5 border-bottom bg-dark" id="gallery">
+    <div id="gallery-carousel" class="carousel slide container px-5 my-5">
+        <div class="carousel-inner justify-content-center">
+            <div class="carousel-item active container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/ar-12.jfif') }}">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/grendel-6.5.jpeg') }}">
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/3030-la.jpg') }}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/ar-12.jfif') }}">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/grendel-6.5.jpeg') }}">
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <img class="gallery-image" src="{{ url_for('static', filename='/assets/gallery/3030-la.jpg') }}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<!-- About section -->
+<section id="about-section" class="bg-black py-5 border-bottom">
+    <div class="col-lg-6 container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">ABOUT US</h2>
+            <p class="lead mb-0 text-white-50">FAMILY OWNED AND OPERATED</p>
+            <hr>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- About body -->
+            <div class="text-left">
+                <h3 class="about-text text-white-50">
+                    <ul>
+                        <li>Fedrally licensed, safe practices, quality guaranteed.</li>
+                        <li>Onsite range for safe field-testing</li>
+                        <li>10% discount for active military, law-enforcement, fire fighters and EMTs!</li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials section-->
+<section class="py-5 border-bottom bg-dark">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Customer testimonials</h2>
+            <p class="lead mb-0 text-white-50">Our customers love working with us</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- Testimonial 1-->
+                <div class="card mb-4 bg-black bg-gradient">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="testimonial-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                                <div class="small text-muted">- Client Name, Location</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2-->
+                <div class="card bg-black bg-gradient">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="testimonial-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
+                                <div class="small text-muted">- Client Name, Location</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section-->
+<section id="contact-section" class="bg-black border-bottom py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <h3>ANTHONY EDWARDS SR</h3>
+                <H4>OWNER-GUNSMITH</H4>
+                <hr>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="contact-icon feature text-warning bg-gradient rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                <h2 class="fw-bolder">GET IN TOUCH</h2>
+                <p class="lead mb-0 text-white-50">We'd love to hear from you</p>
+                <hr>
+            </div>
+            <div class="col-lg-4">
+                <h3>360-643-3836</h3>
+                <h4>PFR2014@Outlook.com</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form autocomplete="off" id="contactForm" data-sb-form-api-token="API_TOKEN" action="{{ url_for('index') }}" method="post" class="">
+
+                    {{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'outline-warning btn-lg bg-gradient d-grid'}) }}
+                    <!-- Name input-->
+<!--                    <div class="form-floating mb-3">-->
+<!--                        <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />-->
+<!--                        <label for="name">Full name</label>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Email address input&ndash;&gt;-->
+<!--                    <div class="form-floating mb-3">-->
+<!--                        <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />-->
+<!--                        <label for="email">Email address</label>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Phone number input&ndash;&gt;-->
+<!--                    <div class="form-floating mb-3">-->
+<!--                        <input name="phone" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />-->
+<!--                        <label for="phone">Phone number</label>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; Message input&ndash;&gt;-->
+<!--                    <div class="form-floating mb-3">-->
+<!--                        <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>-->
+<!--                        <label for="message">Message: Tell us how we can help.</label>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>-->
+<!--                    </div>-->
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+<!--                    <div class="d-none" id="submitSuccessMessage">-->
+<!--                        <div class="text-center mb-3">-->
+<!--                            <div class="fw-bolder">Form submission successful!</div>-->
+<!--                            To activate this form, sign up at-->
+<!--                            <br />-->
+<!--                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+<!--                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
+                    <!-- Submit Button-->
+<!--                    <div class="d-grid py-5"><button class="btn btn-outline-warning btn-lg bg-gradient" type="submit">Submit</button></div>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.html" %}
