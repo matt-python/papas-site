@@ -10,13 +10,21 @@
                         <h1 class="display-5 fw-bolder mb-2">PAPA'S FIREARM REPAIR</h1>
                         <hr>
 
-
-
-                        <div>
-                            <img class="title-image" src="{{ url_for('static', filename='/assets/title-logo.png') }}" alt="gold-star">
+                        <div class="col-lg-4">
+                         <h3>ANTHONY EDWARDS SR</h3>
+                         <H4>OWNER-GUNSMITH</H4>
+                         <hr>
                         </div>
 
-
+                        <div>
+                            <img class="title-image col-lg-4" src="{{ url_for('static', filename='/assets/title-logo.png') }}" alt="gold-star">
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <h3>360-643-3836</h3>
+                             <h4>PFR2014@Outlook.com</h4>
+                             <hr>
+                        </div>
 
                         <h2>FIREARMS SOLD, TRANSFERRED, CLEANED AND REPAIRED</h2>
                     </div>
@@ -134,7 +142,7 @@
     </div>
 </section>
 <!-- Contact section-->
-<section id="contact-section" class="bg-black border-bottom py-5">
+<!-- <section id="contact-section" class="bg-black border-bottom py-5">
     <div class="container px-5 my-5 px-5">
         <div class="row text-center">
             <div class="col-lg-4">
@@ -155,7 +163,7 @@
             </div>
         </div>
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6"> -->
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
                 <!-- * * * * * * * * * * * * * * *-->
@@ -163,9 +171,9 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form autocomplete="off" id="contactForm" data-sb-form-api-token="API_TOKEN" action="{{ url_for('index') }}" method="post" class="">
+<!--                 <form autocomplete="off" id="contactForm" data-sb-form-api-token="API_TOKEN" action="{{ url_for('index') }}" method="post" class="">
 
-                    {{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'outline-warning btn-lg bg-gradient d-grid'}) }}
+                    {{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'outline-warning btn-lg bg-gradient d-grid'}) }} -->
                     <!-- Name input-->
 <!--                    <div class="form-floating mb-3">-->
 <!--                        <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />-->
@@ -210,10 +218,10 @@
 <!--                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
                     <!-- Submit Button-->
 <!--                    <div class="d-grid py-5"><button class="btn btn-outline-warning btn-lg bg-gradient" type="submit">Submit</button></div>-->
-                </form>
+<!--                 </form>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 {% include "footer.html" %}
