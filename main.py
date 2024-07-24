@@ -17,7 +17,7 @@ DEST_EMAIL = os.environ.get('PAPA_EMAIL')
 class ContactForm(FlaskForm):
     name = StringField(label='', validators=[DataRequired()], render_kw={'placeholder': 'Name'})
     email = StringField(label='', validators=[DataRequired(), Email()], render_kw={'placeholder': 'Email'})
-    phone = StringField(label='', validators=[DataRequired(), render_kw={'placeholder': 'Phone Number'})
+    phone = StringField(label='', validators=[DataRequired()], render_kw={'placeholder': 'Phone Number'})
     message = StringField(label='', validators=[DataRequired()], widget=TextArea(), render_kw={'placeholder': "Please type a detailed message."})
     submit = SubmitField(label='Submit')
 
