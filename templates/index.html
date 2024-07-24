@@ -155,6 +155,14 @@
         </div>
     </div>
 </section>
-
+<section id="contact-section" class="bg-black border-bottom py-5">
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-6">
+            <form autocomplete="off" id="contactForm" data-sb-form-api-token="API_TOKEN" action="{{ url_for('index') }}" method="post" class="">
+                {{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'outline-warning btn-lg bg-gradient d-grid'}) }}
+            </form>
+        </div>
+    </div>
+</section>
 
 {% include "footer.html" %}
